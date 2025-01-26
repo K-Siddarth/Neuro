@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
+
 import "./AchievementsPage.css";
+import GraphCanvas from "./graph.jsx";
 
 const eventsData = [
   // {
@@ -79,6 +81,7 @@ const AchievementsPage = () => {
 
   return (
     <div className="achievements-container">
+            <GraphCanvas/>
       {eventsData.map((section, index) => (
         <div
           key={index}

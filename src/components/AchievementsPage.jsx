@@ -81,7 +81,9 @@ const AchievementsPage = () => {
 
   return (
     <div className="achievements-container">
-            <GraphCanvas/>
+      <div className="graph-canvas">
+        <GraphCanvas />
+      </div>
       {eventsData.map((section, index) => (
         <div
           key={index}

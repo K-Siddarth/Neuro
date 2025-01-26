@@ -88,8 +88,12 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #213547 !important;
     background-color: #ffffff;
+  }
+
+  body {
+    color: #213547 !important;
   }
 
   a:hover {

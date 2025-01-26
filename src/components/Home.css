@@ -9,3 +9,49 @@
     font-family: JetBrains Mono;
     overflow-y: hidden;
 }
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; /* Ensure the container uses the full width */
+    padding: 0 1rem; /* Padding to avoid text hitting the edges on smaller screens */
+}
+
+.typing-text {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 3rem;
+    text-align: center;
+    word-wrap: break-word;  /* Ensures long words wrap */
+    word-break: break-word; /* Breaks the word if it’s too long */
+    white-space: normal;  /* Ensures normal line breaking */
+    margin: 0;
+    line-height: 1.5;  /* Optional: Adjust line height for readability */
+}
+
+/* Responsive font size */
+@media (max-width: 1200px) {
+    .typing-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .typing-text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .typing-text {
+        font-size: 1.2rem;
+    }
+}
+

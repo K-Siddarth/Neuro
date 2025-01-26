@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+.achievements-container {
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.parallax-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.9);
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.1s ease;
+  /* border: 1px solid red; */
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.event-card {
+  background: linear-gradient(135deg, #333, #555);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+  width: 250px;
+  height: 150px;
+  transform: scale(1);
+}
+
+.event-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 8px 12px rgba(255, 255, 255, 0.2);
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #bbb;
+  margin: 5px 0 0;
+}
